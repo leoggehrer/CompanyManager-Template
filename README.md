@@ -44,10 +44,12 @@ Die Datenstruktur vom 'CompanyManager' ist einfach und besteht im wesentlichen a
 
 Aus dieser Definition kann ein entsprechendes Objektmodell abgeleitet werden, welches nachfolgend skizziert ist:
 
-|Komponente|Relation|Komponente|
-|---|---|---|
-|**Company**|1:n|Customer|
-|**Company**|1:n|Employee|
+| Komponente        | Relation | Komponente |
+| ----------------- | -------- | ---------- |
+| **Company**       | 1:n      | Customer   |
+| **Company**       | 1:n      | Employee   |
+| **Customer**      | 1:0..1   | Company    |
+| **Employee**      | 1:0..1   | Company    |
 
 ### Testen des Systems
 
