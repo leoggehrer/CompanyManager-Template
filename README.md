@@ -14,12 +14,12 @@ Das Projekt **'CompanyManager'** dient als Beispiel für die Entwicklung eines d
 
 In dieser Vorlage gibt es bereits zwei verschiedene Projekte:
 
-| Name                             | Beschreibung                                                                                                                                                                                                     |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CompanyManager.ConApp            | Eine Konsolen-Anwendung zum Starten der Anwendung und Ausführung des Programm-Menüs. Die entsprechenden Menü-Funktionen müssen implementiert werden und sind mit *throw new NotImplementedException()* markiert. |
-| CompanyManager.Logic             | In diesem Projekt sind alle Schnittstellen und der Datenzugriff definiert.                                                                                                                                       |
-| CompanyManager.Logic.Contracts   | In diesem Abschnitt befinden sich alle Schnittstellen.                                                                                                                                                           |
-| CompanyManager.Logic.DataContext | In diesem Abschnitt befindet sich der Data-Kontext (`CompanyManagerContext`).                                                                                                                                    |
+| Name | Beschreibung |
+|------|------------- |
+| CompanyManager.ConApp | Eine Konsolen-Anwendung zum Starten der Anwendung und Ausführung des Programm-Menüs. Die entsprechenden Menü-Funktionen müssen implementiert werden und sind mit *throw new NotImplementedException()* markiert. |
+| CompanyManager.Logic | In diesem Projekt sind alle Schnittstellen und der Datenzugriff definiert. |
+| CompanyManager.Logic.Contracts   | In diesem Abschnitt befinden sich alle Schnittstellen. |
+| CompanyManager.Logic.DataContext | In diesem Abschnitt befindet sich der Data-Kontext (`CompanyManagerContext`). |
 
 ### Datenstruktur
 
@@ -46,8 +46,8 @@ Aus dieser Definition kann ein entsprechendes Objektmodell abgeleitet werden, we
 
 | Komponente   | Relation | Komponente |
 | ------------ | -------- | ---------- |
-| **Company**  | 1\:n     | Customer   |
-| **Company**  | 1\:n     | Employee   |
+| **Company**  | 1:n      | Customer   |
+| **Company**  | 1:n      | Employee   |
 | **Customer** | 1:1      | Company    |
 | **Employee** | 1:1      | Company    |
 
