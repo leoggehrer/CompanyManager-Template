@@ -51,6 +51,14 @@ Aus dieser Definition kann ein entsprechendes Objektmodell abgeleitet werden, we
 | **Customer** | 1:1      | Company    |
 | **Employee** | 1:1      | Company    |
 
+### Demos und Dokumentation
+
+- **Demo 1**: Anbindung der Entitäten an die Datenbank - [Demo](https://github.com/leoggehrer/CompanyManagerWithSqlite)
+- **Demo 2**: Hinzufügen eines WebApi-Projektes für die REST-Operationen - [Demo](https://github.com/leoggehrer/CompanyManagerWithWebApi)
+- **Demo 3**: Entwicklung eines generischen Kontrollers für die REST-Operationen - [Demo](https://github.com/leoggehrer/CompanyManagerWithWebApiGeneric)
+- **Demo 4**: Hinzufügen und Verwendung von `Settings` - [Demo](https://github.com/leoggehrer/CompanyManagerWithWebApiGeneric)
+
+
 ### Testen des Systems
 
 - keine Angaben
