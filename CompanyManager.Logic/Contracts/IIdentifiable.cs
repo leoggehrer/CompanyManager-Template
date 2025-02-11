@@ -1,4 +1,5 @@
-﻿namespace CompanyManager.Logic.Contracts
+﻿//@BaseCode
+namespace CompanyManager.Logic.Contracts
 {
     public interface IIdentifiable
     {
