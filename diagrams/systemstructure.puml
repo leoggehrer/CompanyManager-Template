@@ -1,5 +1,5 @@
 @startuml systemstructure
-!theme bluegray
+!theme cerulean-outline
 skinparam packageStyle folder
 
 package CompanyManager.ConApp {
@@ -20,6 +20,27 @@ package CompanyManager.Common {
     package Contracts {
         interface IIdentifiable {
             + Id : int
+        }
+        interface ICompany {
+            + Name : string
+            + Address : string
+            ---
+            + CopyProperties(company : ICompany) : void
+        }
+        interface ICustomer {
+            + CompanyId : int
+            + Name : string
+            + Email : string
+            ---
+            + CopyProperties(customer : ICustomer) : void
+        }
+        interface IEmployee {
+            + CompanyId : int
+            + FirstName : string
+            + LastName : string
+            + Email : string
+            ---
+            + CopyProperties(employee : IEmployee) : void
         }
         ICompany -|> IIdentifiable
         ICustomer -|> IIdentifiable
