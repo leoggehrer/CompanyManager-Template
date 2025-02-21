@@ -18,9 +18,6 @@ package CompanyManager.Logic {
 
 package CompanyManager.Common {
     package Contracts {
-        interface IIdentifiable {
-            + Id : int
-        }
         interface ICompany {
             + Name : string
             + Address : string
@@ -41,6 +38,9 @@ package CompanyManager.Common {
             + Email : string
             ---
             + CopyProperties(employee : IEmployee) : void
+        }
+        interface IIdentifiable {
+            + Id : int
         }
         ICompany -|> IIdentifiable
         ICustomer -|> IIdentifiable
