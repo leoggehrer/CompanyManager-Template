@@ -1,0 +1,32 @@
+@startuml systemstructure
+!theme bluegray
+skinparam packageStyle folder
+
+package CompanyManager.ConApp {
+    class Program {
+
+    }
+}
+
+package CompanyManager.Logic {
+    package DataContext {
+        class Factory {
+
+        }
+    }
+}
+
+package CompanyManager.Common {
+    package Contracts {
+        interface IIdentifiable {
+            + Id : int
+        }
+        ICompany -|> IIdentifiable
+        ICustomer -|> IIdentifiable
+        IEmployee -|> IIdentifiable
+    }
+}
+
+CompanyManager.Logic --> CompanyManager.Common : imports
+CompanyManager.ConApp --> CompanyManager.Common : imports
+@enduml
