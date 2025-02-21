@@ -1,27 +1,80 @@
 # CompanyManager
 
----
+**Lernziele:**
 
-**Lernziele**
+- Diese Vorlage dient als Ausgangspunkt für verschiedenste Demos/Ausbaustufen im Unterricht.
 
-- Diese Vorlage dient als Ausgangspunkt für verschiedenste Demos im Unterricht.
-
-## CompanyManager
+## Projektbeschreibung
 
 Das Projekt **'CompanyManager'** dient als Beispiel für die Entwicklung eines datenzentrierten Software-Systems. Um die Komplexität eines solchen Systems zu veranschaulichen, ist das Beispiel in mehrere thematische Abschnitte unterteilt. Jede Lerneinheit beginnt mit dieser Vorlage und wird entsprechend der jeweiligen Aufgabenstellung weiterentwickelt.
 
 ### Vorlage
 
-In dieser Vorlage gibt es bereits zwei verschiedene Projekte:
+In dieser Vorlage gibt es bereits drei verschiedene Projekte:
 
 | Name | Beschreibung | Typ |
 |------|------------- |-----|
-| CompanyManager.Common            | In diesem Projekt werden alle Klassen gesammelt, die in anderen Projekten verwendet werden (Schnittstellen, Hilfsfunktionen usw.). | Bibliothek |
-| CompanyManager.Common.Contracts  | In diesem Abschnitt befinden sich alle Schnittstellen. | Bibliothek |
-| CompanyManager.Logic             | In diesem Projekt sind alle Schnittstellen und der Datenzugriff definiert. | Bibliothek |
+| **CompanyManager.Common**        | In diesem Projekt werden alle Klassen gesammelt, die in anderen Projekten verwendet werden (Schnittstellen, Hilfsfunktionen usw.). | Bibliothek |
+| CompanyManager.Common.Contracts  | In diesem Abschnitt befinden sich alle Schnittstellen für die Date-Objekte. | Bibliothek |
+| **CompanyManager.Logic**         | In diesem Projekt sind alle Schnittstellen und der Datenzugriff definiert. | Bibliothek |
 | CompanyManager.Logic.Contracts   | In diesem Abschnitt befinden sich alle Schnittstellen. | Bibliothek |
 | CompanyManager.Logic.DataContext | In diesem Abschnitt befindet sich der Data-Kontext (`CompanyManagerContext`). | Bibliothek |
-| CompanyManager.ConApp            | Konsolenanwendung zum Starten des Programms und zur Implementierung des Menüsystems. Menüfunktionen sind mit *throw new NotImplementedException()* markiert. | Konsolenanwendung |
+| **CompanyManager.ConApp**        | Konsolenanwendung zum Starten des Programms und zur Implementierung des Menüsystems. Menüfunktionen sind mit *throw new NotImplementedException()* markiert. | Konsolenanwendung |
+
+#### Systemstruktur
+
+Die einzelnen Projekte sind miteinander verbunden und bilden ein System, das in der Lage ist, Daten zu verwalten. Die Struktur des Systems ist in der folgenden Abbildung zusammengefasst:
+
+```plantuml
+@startuml
+!theme bluegray
+skinparam packageStyle folder
+
+package CompanyManager.ConApp {
+    class Program {
+
+    }
+}
+
+package CompanyManager.Logic {
+    package DataContext {
+        class Factory {
+
+        }
+    }
+}
+
+package CompanyManager.Common {
+    package Contracts {
+        interface IIdentifiable 
+        ICompany -|> IIdentifiable
+        ICustomer -|> IIdentifiable
+        IEmployee -|> IIdentifiable
+    }
+}
+
+CompanyManager.Logic --> CompanyManager.Common : imports
+CompanyManager.ConApp --> CompanyManager.Common : imports
+@enduml
+```
+
+**Erklärung:** Das Projekt ***CompanyManager.Common*** wird von den Projekten **CompanyManager.ConApp** und **CompanyManager.Logic** importiert. Das Importieren erfolgt in der jeweiligen Projekt-Datei. Hier der Auszug aus der Projekt-Datei ***CompanyManager.Logic.csproj***:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CompanyManager.Common\CompanyManager.Common.csproj" />
+  </ItemGroup>
+
+</Project>
+```
 
 ### Datenstruktur
 
