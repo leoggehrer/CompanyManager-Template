@@ -25,7 +25,7 @@ In dieser Vorlage gibt es bereits drei verschiedene Projekte:
 
 Die einzelnen Projekte sind miteinander verbunden und bilden ein System, das in der Lage ist, Daten zu verwalten. Die Struktur des Systems ist in der folgenden Abbildung zusammengefasst:
 
-![Systemstructure (PA)](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/leoggehrer/CompanyManagerWithSqlite/master/diagrams/systemstructure.puml)
+![Systemstructure (PA)](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/leoggehrer/CompanyManager-Template/master/diagrams/systemstructure.puml)
 
 **Erklärung:** Das Projekt ***CompanyManager.Common*** wird von den Projekten **CompanyManager.ConApp** und **CompanyManager.Logic** importiert. Das Importieren erfolgt in der jeweiligen Projekt-Datei. Hier der Auszug aus der Projekt-Datei ***CompanyManager.Logic.csproj***:
 
