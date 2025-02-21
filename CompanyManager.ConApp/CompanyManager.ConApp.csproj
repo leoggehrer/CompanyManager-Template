@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CompanyManager.Common\CompanyManager.Common.csproj" />
     <ProjectReference Include="..\CompanyManager.Logic\CompanyManager.Logic.csproj" />
   </ItemGroup>
 

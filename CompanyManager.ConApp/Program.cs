@@ -8,7 +8,7 @@
         static void Main(/*string[] args*/)
         {
             string input = string.Empty;
-            Logic.Contracts.IContext context = Logic.DataContext.Factory.CreateContext();
+            Common.Contracts.IContext context = Common.DataContext.Factory.CreateContext();
 
             while (!input.Equals("x", StringComparison.CurrentCultureIgnoreCase))
             {
@@ -82,7 +82,7 @@
         /// Prints all companies in the context.
         /// </summary>
         /// <param name="context">The database context.</param>
-        private static void PrintCompanyies(Logic.Contracts.IContext context)
+        private static void PrintCompanyies(Common.Contracts.IContext context)
         {
             Console.WriteLine();
             Console.WriteLine("Companies:");
@@ -95,7 +95,7 @@
         /// Queries companies based on a user-provided condition.
         /// </summary>
         /// <param name="context">Thedatabase context.</param>
-        private static void QueryCompanies(Logic.Contracts.IContext context)
+        private static void QueryCompanies(Common.Contracts.IContext context)
         {
             throw new NotImplementedException();
         }
@@ -104,7 +104,7 @@
         /// Adds a new company to the context.
         /// </summary>
         /// <param name="context">Thedatabase context.</param>
-        private static void AddCompany(Logic.Contracts.IContext context)
+        private static void AddCompany(Common.Contracts.IContext context)
         {
             throw new NotImplementedException();
         }
@@ -113,7 +113,7 @@
         /// Deletes a company from the context.
         /// </summary>
         /// <param name="context">Thedatabase context.</param>
-        private static void DeleteCompany(Logic.Contracts.IContext context)
+        private static void DeleteCompany(Common.Contracts.IContext context)
         {
             throw new NotImplementedException();
         }
@@ -122,7 +122,7 @@
         /// Prints all employees in the context.
         /// </summary>
         /// <param name="context">Thedatabase context.</param>
-        private static void PrintEmployees(Logic.Contracts.IContext context)
+        private static void PrintEmployees(Common.Contracts.IContext context)
         {
             throw new NotImplementedException();
         }
@@ -131,7 +131,7 @@
         /// Queries employees based on a user-provided condition.
         /// </summary>
         /// <param name="context">Thedatabase context.</param>
-        private static void QuerEmployees(Logic.Contracts.IContext context)
+        private static void QuerEmployees(Common.Contracts.IContext context)
         {
             throw new NotImplementedException();
         }
@@ -140,7 +140,7 @@
         /// Adds a new employee to the context.
         /// </summary>
         /// <param name="context">Thedatabase context.</param>
-        private static void AddEmployee(Logic.Contracts.IContext context)
+        private static void AddEmployee(Common.Contracts.IContext context)
         {
             throw new NotImplementedException();
         }
@@ -149,7 +149,7 @@
         /// Deletes an employee from the context.
         /// </summary>
         /// <param name="context">Thedatabase context.</param>
-        private static void DeleteEmployee(Logic.Contracts.IContext context)
+        private static void DeleteEmployee(Common.Contracts.IContext context)
         {
             throw new NotImplementedException();
         }

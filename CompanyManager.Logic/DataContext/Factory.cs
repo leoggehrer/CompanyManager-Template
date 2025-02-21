@@ -1,6 +1,6 @@
-﻿using CompanyManager.Logic.Contracts;
+﻿using CompanyManager.Common.Contracts;
 
-namespace CompanyManager.Logic.DataContext
+namespace CompanyManager.Common.DataContext
 {
     /// <summary>
     /// Factory class to create instances of IMusicStoreContext.

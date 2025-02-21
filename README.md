@@ -14,16 +14,18 @@ Das Projekt **'CompanyManager'** dient als Beispiel für die Entwicklung eines d
 
 In dieser Vorlage gibt es bereits zwei verschiedene Projekte:
 
-| Name | Beschreibung |
-|------|------------- |
-| CompanyManager.ConApp | Eine Konsolen-Anwendung zum Starten der Anwendung und Ausführung des Programm-Menüs. Die entsprechenden Menü-Funktionen müssen implementiert werden und sind mit *throw new NotImplementedException()* markiert. |
-| CompanyManager.Logic | In diesem Projekt sind alle Schnittstellen und der Datenzugriff definiert. |
-| CompanyManager.Logic.Contracts   | In diesem Abschnitt befinden sich alle Schnittstellen. |
-| CompanyManager.Logic.DataContext | In diesem Abschnitt befindet sich der Data-Kontext (`CompanyManagerContext`). |
+| Name | Beschreibung | Typ |
+|------|------------- |-----|
+| CompanyManager.Common            | In diesem Projekt werden alle Klassen gesammelt, die in anderen Projekten verwendet werden (Schnittstellen, Hilfsfunktionen usw.). | Bibliothek |
+| CompanyManager.Common.Contracts  | In diesem Abschnitt befinden sich alle Schnittstellen. | Bibliothek |
+| CompanyManager.Logic             | In diesem Projekt sind alle Schnittstellen und der Datenzugriff definiert. | Bibliothek |
+| CompanyManager.Logic.Contracts   | In diesem Abschnitt befinden sich alle Schnittstellen. | Bibliothek |
+| CompanyManager.Logic.DataContext | In diesem Abschnitt befindet sich der Data-Kontext (`CompanyManagerContext`). | Bibliothek |
+| CompanyManager.ConApp            | Konsolenanwendung zum Starten des Programms und zur Implementierung des Menüsystems. Menüfunktionen sind mit *throw new NotImplementedException()* markiert. | Konsolenanwendung |
 
 ### Datenstruktur
 
-Die Datenstruktur vom 'CompanyManager' ist einfach und besteht im Wesentlichen aus 3 Komponenten, welche in der folgenden Tabelle zusammengefasst sind:
+Die Datenstruktur von 'CompanyManager' ist einfach und besteht im Wesentlichen aus 3 Komponenten, welche in der folgenden Tabelle zusammengefasst sind:
 
 | Komponente   | Beschreibung                                                  | Größe | Mussfeld | Eindeutig |
 | ------------ | ------------------------------------------------------------- | ----- | -------- | --------- |
