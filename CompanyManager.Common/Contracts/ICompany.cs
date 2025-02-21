@@ -24,6 +24,8 @@ namespace CompanyManager.Common.Contracts
         /// <param name="company">The company object that is copied.</param>
         void CopyProperties(ICompany company)
         {
+            if (company == null) throw new ArgumentNullException(nameof(company));
+
             Id = company.Id;
             Name = company.Name;
             Address = company.Address;
