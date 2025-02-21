@@ -1,5 +1,5 @@
 ﻿//@BaseCode
-namespace CompanyManager.Common.Contracts
+namespace CompanyManager.Logic.Contracts
 {
     /// <summary>
     /// Represents a context that manages the connection to the database and provides methods to save changes.

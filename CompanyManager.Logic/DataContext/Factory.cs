@@ -1,6 +1,4 @@
-﻿using CompanyManager.Common.Contracts;
-
-namespace CompanyManager.Common.DataContext
+﻿namespace CompanyManager.Logic.DataContext
 {
     /// <summary>
     /// Factory class to create instances of IMusicStoreContext.
@@ -11,7 +9,7 @@ namespace CompanyManager.Common.DataContext
         /// Creates an instance of IContext.
         /// </summary>
         /// <returns>An instance of IContext.</returns>
-        public static IContext CreateContext()
+        public static Contracts.IContext CreateContext()
         {
             throw new NotImplementedException();
         }
