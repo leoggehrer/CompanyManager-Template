@@ -79,10 +79,10 @@ Aus dieser Definition kann ein entsprechendes Objektmodell abgeleitet werden, we
 
 | Ausbaustufe | Beschreibung | Link |
 |-------------|--------------|------|
-| **Demo 1**  | Erstellen der Entitäten und Anbindung an die Datenbank | [Demo](https://github.com/leoggehrer/CompanyManagerWithSqlite) |
-| **Demo 2**  | Hinzufügen und Verwendung von `AppSettings` | [Demo](https://github.com/leoggehrer/CompanyManagerWithSettings) |
-| **Demo 3**  | Hinzufügen eines WebApi-Projektes für die REST-Operationen | [Demo](https://github.com/leoggehrer/CompanyManagerWithWebApi) |
-| **Demo 4**  | Entwicklung eines generischen Kontrollers für die REST-Operationen | [Demo](https://github.com/leoggehrer/CompanyManagerWithWebApiGeneric) |
+| **Stufe 1**  | Erstellen der Entitäten und Anbindung an die Datenbank | [Demo](https://github.com/leoggehrer/CompanyManagerWithSqlite) |
+| **Stufe 2**  | Hinzufügen und Verwendung von `AppSettings` | [Demo](https://github.com/leoggehrer/CompanyManagerWithSettings) |
+| **Stufe 3**  | Hinzufügen eines WebApi-Projektes für die REST-Operationen | [Demo](https://github.com/leoggehrer/CompanyManagerWithWebApi) |
+| **Stufe 4**  | Abfragen und Bearbeitung von Daten mit der REST-Api | [Demo](https://github.com/leoggehrer/CompanyManagerWithRestConApp) |
 
 ### Testen des Systems
 
