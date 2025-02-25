@@ -8,7 +8,7 @@
         static void Main(/*string[] args*/)
         {
             string input = string.Empty;
-            Common.Contracts.IContext context = Common.DataContext.Factory.CreateContext();
+            Logic.Contracts.IContext context = Logic.DataContext.Factory.CreateContext();
 
             while (!input.Equals("x", StringComparison.CurrentCultureIgnoreCase))
             {
