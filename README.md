@@ -77,12 +77,13 @@ Aus dieser Definition kann ein entsprechendes Objektmodell abgeleitet werden, we
 
 ### Ausbaustufen und Dokumentation
 
-| Ausbaustufe | Beschreibung | Link |
-|-------------|--------------|------|
-| **Stufe 1**  | Erstellen der Entitäten und Anbindung an die Datenbank | [Demo](https://github.com/leoggehrer/CompanyManagerWithSqlite) |
-| **Stufe 2**  | Hinzufügen und Verwendung von `AppSettings` | [Demo](https://github.com/leoggehrer/CompanyManagerWithSettings) |
-| **Stufe 3**  | Hinzufügen eines WebApi-Projektes für die REST-Operationen | [Demo](https://github.com/leoggehrer/CompanyManagerWithWebApi) |
-| **Stufe 4**  | Abfragen und Bearbeitung von Daten mit der REST-Api | [Demo](https://github.com/leoggehrer/CompanyManagerWithRestConApp) |
+| Ausbaustufe | Beschreibung | Level | Link |
+|-------------|--------------|-------|------|
+| **Stufe 1**  | Erstellen der Entitäten und Anbindung an die Datenbank | Junior | [Demo](https://github.com/leoggehrer/CompanyManagerWithSqlite) |
+| **Stufe 2**  | Hinzufügen und Verwendung von `AppSettings` | Junior | [Demo](https://github.com/leoggehrer/CompanyManagerWithSettings) |
+| **Stufe 2.A**  | Hinzufügen und Verwendung von `AppSettings` mit generischen EntitySet<...> | Senior | [Demo](https://github.com/leoggehrer/CompanyManagerWithLogicGeneric) |
+| **Stufe 3**  | Hinzufügen eines WebApi-Projektes für die REST-Operationen | Junior | [Demo](https://github.com/leoggehrer/CompanyManagerWithWebApi) |
+| **Stufe 4**  | Abfragen und Bearbeitung von Daten mit der REST-Api | Junior | [Demo](https://github.com/leoggehrer/CompanyManagerWithRestConApp) |
 
 ### Testen des Systems
 
