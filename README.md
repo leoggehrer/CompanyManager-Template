@@ -83,7 +83,8 @@ Aus dieser Definition kann ein entsprechendes Objektmodell abgeleitet werden, we
 | **Stufe 2**    | Hinzufügen und Verwendung von `AppSettings` | Junior | [Demo](https://github.com/leoggehrer/CompanyManagerWithSettings) |
 | **Stufe 2.A**  | Hinzufügen und Verwendung von `AppSettings` mit generischen EntitySet<...> | Senior | [Demo](https://github.com/leoggehrer/CompanyManagerWithLogicGeneric) |
 | **Stufe 3**    | Hinzufügen eines WebApi-Projektes für die REST-Operationen | Junior | [Demo](https://github.com/leoggehrer/CompanyManagerWithWebApi) |
-| **Stufe 4**    | Abfragen und Bearbeitung von Daten mit der REST-Api | Junior | [Demo](https://github.com/leoggehrer/CompanyManagerWithRestConApp) |
+| **Stufe 3.A**  | Hinzufügen eines WebApi-Projektes für die REST-Operationen mit generischen GenericController<TModel, TEntity, TContract>, | Senior | [Demo](https://github.com/leoggehrer/CompanyManagerWithWebApiGeneric) |
+| **Stufe 4**    | Abfragen und Bearbeitung von Daten mit der REST-Api Client (Konsolenanwendung) | Junior | [Demo](https://github.com/leoggehrer/CompanyManagerWithRestConApp) |
 
 ### Testen des Systems
 
